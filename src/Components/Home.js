@@ -9,15 +9,14 @@ class Home extends React.Component {
         }
     }
 
-    // Handler for setting this state to the searchbar value
+    // Handler for setting this state to the entered value in searchbar
     onInputChange = (event) => {
         this.setState({ city: event.target.value });
     };
 
-    // Handler for handling the events on button click
+    // Method for handling the events on button click
     getCityHandler(e) {
         e.preventDefault();
-        console.log(this.state.city);
         this.props.getWeatherData(this.state.city);
         this.props.hidePreviousData();
     }
