@@ -1,11 +1,70 @@
-.header{
-  background: #8a00f7;
-  height: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.status-box{
+    display: flex;
+    justify-content: center; 
+    font-family: 'Ubuntu', sans-serif;
 }
-.header span{
-  color: white;
-  font-size: 30px;
-  padding: 10px;
-  align-items: center;
-  display: flex;
+.status-box p{
+    background: white;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-top: 0;
+    height: 14vh;
+    box-shadow: 2px 5px 8px 4px rgb(209, 209, 209);
+    font-size: 19px;
+    color: rgb(110, 110, 110);
+}
+.status-box .error{
+    justify-content: center;
+    margin-left: 0;
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-info{
+    font-family: 'Ubuntu', sans-serif;
+    background: white;
+    width: 65%;
+    height: 48vh;
+    box-shadow: 2px 5px 8px 4px rgb(209, 209, 209);
+    font-size: 19px;
+    color: rgb(94, 94, 94);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.weather-info .left-container div{
+    margin: 10px;
+}
+.weather-info .left-container .temp{
+    font-size: 80px;
+    color: rgb(63, 63, 63);
+    font-weight: 1000;
+    display: flex;
+    height: 32vh;
+    margin-left: 50px;
+    align-items: center;
+}
+.weather-info .left-container .temp .fa-water{
+    font-size: 28px;
+    padding: 13px 0 0 25px;
+    /* font-weight: 500; */
+}
+.weather-info ul{
+    list-style: none;
+    margin: 26px 170px 0 0;
+}
+.weather-info ul .divider{
+    padding: 10px;
+}
+.weather-info ul .divider span{
+    font-weight: bolder;
+    color: rgb(82, 82, 82);
 }
