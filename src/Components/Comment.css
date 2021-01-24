@@ -13,7 +13,7 @@
     margin: 20px;
     margin-bottom: 0;
     padding: 5px;
-    width: 825px;
+    width: 94.3%;
     border: #e0e0e0 solid 1px;
     color: gray;
 }
@@ -27,9 +27,12 @@
     cursor: pointer;
     border: rgb(216, 216, 216) solid 2px;
 }
+.comment-container button:hover{
+    opacity: 0.7;
+}
 .comment-container .comment-box{
     background: #f9edff;
-    width: 820px;
+    width: 93.5%;
     margin: 20px;
     padding: 30px 10px;
 }
@@ -43,4 +46,61 @@
     margin: 14px 0 0 0;
     color: rgb(44, 44, 44);
     font-weight: 700;
+}
+
+/* Responsive UI stying starts here */
+@media (max-width:1204px){
+    .comment-container{
+        width: 70%;
+    }
+  }
+@media (max-width:1050px){
+    .comment-container{
+        width: 75%;
+    }
+    .comment-container .comment-box{
+        width: 92.7%;
+    }
+    .comment-container .input-comment{
+        width: 93.5%;
+    }
+}
+@media (max-width:788px){
+    .comment-container{
+        width: 80%;
+    } 
+    .comment-container .comment-box{
+        width: 91%;
+    }
+    .comment-container .input-comment{
+        width: 92%;
+    }
+}
+@media (max-width:588px){
+    .comment-container{
+        width: 90%;
+    } 
+    .comment-container .comment-box h4{
+        font-size: 17px;
+    }
+    .comment-container .comment-box{
+        width: 89.5%;
+        font-size: 17px;
+    }
+    .comment-container .input-comment{
+        width: 90.5%;
+        font-size: 17px;
+    }
+}
+@media (max-width:445px){
+    .comment-container{
+        width: 100%;
+    } 
+    .comment-container .comment-box{
+        width: 85%;
+        font-size: 15px;
+    }
+    .comment-container .input-comment{
+        width: 87%;
+    }
 }
