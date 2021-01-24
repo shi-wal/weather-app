@@ -70,7 +70,7 @@ class App extends React.Component {
               <div key={info.id} className="weather-info">
                 <div className="left-container">
                   <div>{info.name}, {info.sys.country}, {date.toDateString()} </div>
-                  <div className="temp">{parseFloat((info.main.temp) - 273.15).toFixed(1)}°C <i className="fas fa-water"></i></div>
+                  <div className="temp">{parseFloat((info.main.temp) - 273.15).toFixed(1)}°C <img src={"http://openweathermap.org/img/wn/"+info.weather[0].icon+"@2x.png"} alt="weather icon"></img></div>
                 </div>
                 <ul>
                   <div className="divider">
